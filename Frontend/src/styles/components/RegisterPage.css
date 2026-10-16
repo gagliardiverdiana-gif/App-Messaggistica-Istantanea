@@ -1,0 +1,159 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background: #f8f8f7;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.register-card-header {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.register-card-header h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #111111;
+}
+
+.register-card-header p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15px;
+  line-height: 1.4;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #999999;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #111111;
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.06);
+}
+
+.form-field textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+.container-buttons-register {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.register-submit-btn {
+  margin-top: 8px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    opacity 0.2s ease,
+    background 0.2s ease;
+}
+
+.register-submit-btn-outlined {
+  background: transparent;
+  color: #000000;
+}
+
+.register-submit-btn-outlined:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.register-submit-btn-active {
+  background: #111111;
+  color: #ffffff;
+}
+
+.register-submit-btn:hover {
+  opacity: 0.92;
+}
+
+.register-submit-btn:active {
+  transform: translateY(1px);
+}
+
+.register-message {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444444;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .register-page {
+    padding: 20px 12px;
+  }
+
+  .register-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .register-card-header h1 {
+    font-size: 28px;
+  }
+}
+
+.container-buttons-register {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 12px;
+}

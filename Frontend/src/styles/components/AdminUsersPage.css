@@ -1,0 +1,157 @@
+.admin-users-form {
+  display: grid;
+  gap: 12px;
+}
+
+.admin-users-form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e7e5e4;
+  border-radius: 16px;
+  background-color: #fcfcfb;
+  color: #111111;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.admin-users-form-input:focus {
+  border-color: #cfc7bb;
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.06);
+  background-color: #ffffff;
+}
+
+.admin-users-role-dropdown {
+  position: relative;
+}
+
+.admin-users-role-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #e7e5e4;
+  border-radius: 16px;
+  background: #fcfcfb;
+  color: #111111;
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.admin-users-role-trigger:hover {
+  background: #ffffff;
+}
+
+.admin-users-role-trigger.open {
+  border-color: #cfc7bb;
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.06);
+  background: #ffffff;
+}
+
+.admin-users-role-chevron {
+  font-size: 14px;
+  color: #666666;
+  transition: transform 0.2s ease;
+}
+
+.admin-users-role-trigger.open .admin-users-role-chevron {
+  transform: rotate(180deg);
+}
+
+.admin-users-role-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: grid;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid #e7e5e4;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.admin-users-role-option {
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: #111111;
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.admin-users-role-option:hover {
+  background: #f4f1eb;
+}
+
+.admin-users-role-option.active {
+  background: #111111;
+  color: #ffffff;
+}
+
+.admin-users-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.admin-user-card {
+  border: 1px solid #e7e5e4;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fcfcfb;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.admin-user-card p {
+  margin: 0 0 10px 0;
+  color: #111111;
+  font-size: 14px;
+}
+
+.admin-user-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.admin-user-delete-btn {
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: 1px solid #dc3545;
+  border-radius: 8px;
+  background: #dc3545;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-user-delete-btn:hover {
+  background: #bb2d3b;
+  border-color: #bb2d3b;
+}
+
+@media (max-width: 700px) {
+  .admin-users-create-btn,
+  .admin-user-delete-btn {
+    width: 100%;
+  }
+}

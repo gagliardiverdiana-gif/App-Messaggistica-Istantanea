@@ -1,0 +1,98 @@
+.admin-password-box {
+  margin-top: 10px;
+}
+
+.admin-copy-feedback {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.admin-copy-btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: 1px solid #111111;
+  border-radius: 8px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-copy-btn:hover {
+  background: #2a2a2a;
+  border-color: #2a2a2a;
+}
+
+.admin-request-list {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-request-card {
+  border: 1px solid #e7e5e4;
+  border-radius: 18px;
+  padding: 18px;
+  background: #fcfcfb;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.admin-request-card p {
+  margin: 0 0 10px 0;
+  color: #111111;
+  font-size: 14px;
+}
+
+.admin-request-card p:last-child {
+  margin-bottom: 0;
+}
+
+.admin-request-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.admin-request-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-request-btn-approve {
+  border: 1px solid #198754;
+  background: #198754;
+  color: #ffffff;
+}
+
+.admin-request-btn-approve:hover {
+  background: #157347;
+  border-color: #157347;
+}
+
+.admin-request-btn-reject {
+  border: 1px solid #dc3545;
+  background: #dc3545;
+  color: #ffffff;
+}
+
+.admin-request-btn-reject:hover {
+  background: #bb2d3b;
+  border-color: #bb2d3b;
+}
+
+@media (max-width: 700px) {
+  .admin-request-actions {
+    flex-direction: column;
+  }
+
+  .admin-copy-btn,
+  .admin-request-btn {
+    width: 100%;
+  }
+}

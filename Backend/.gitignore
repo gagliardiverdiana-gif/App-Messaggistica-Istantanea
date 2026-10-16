@@ -1,0 +1,7 @@
+# File e cartelle che Git non deve salvare
+node_modules
+dist
+.env
+.env.*
+!.env.example
+*.log
